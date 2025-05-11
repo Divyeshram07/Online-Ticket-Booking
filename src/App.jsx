@@ -20,7 +20,7 @@ import ForgotPassword from "./components/ForgotPasswordPopup";
 import TicketConfirmation from "./components/TicketConfirmation";
 import AdminDashboard from "./components/AdminDashboard";
 import AddEvent from "./components/AddEvent";
-import AddMovie from "./components/addMovie";
+import AddMovie from "./components/AddMovie";
 
 import "./App.css";
 import TicketRainLoader from "./TicketRainLoader"; // ✅ Import the loader
