@@ -1,0 +1,245 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0a0f1f;
+    box-shadow: 0px 5px 15px rgba(0, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+.logo a span {
+    color: #fff;
+}
+
+/* City Dropdown */
+.city-select {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #00ffff;
+}
+.city-select select {
+    background: transparent;
+    border: 1px solid #00ffff;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 8px 15px;
+    gap: 8px;
+}
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+.search-icon {
+    color: #00ffff;
+    cursor: pointer;
+}
+
+/* Navbar Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+}
+.nav-links li a:hover {
+    color: #00ffff;
+    transform: scale(1.1);
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+.register-btn,
+.signin-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.register-btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 71, 91, 0.6);
+}
+.signin-btn {
+    background: linear-gradient(45deg, #00ffff, #0077ff);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.6);
+}
+.register-btn:hover,
+.signin-btn:hover {
+    transform: scale(1.1);
+}
+.auth-icon {
+    font-size: 1.2rem;
+}
+
+/* 🎤 Hero Section - Full Width Fix */
+.hero {
+    position: relative;
+    width: 100vw;  /* Full viewport width */
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    margin: 0;  /* Remove any default margins */
+    padding: 0;  /* Remove extra padding */
+}
+
+/* 📸 Hero Image */
+.hero-image {
+    width: 100vw;  /* Make sure it covers the full width */
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+/* 🎭 Dark Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Fixes any edge gaps */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: -1;
+}
+
+/* 📄 Text Content */
+.hero-content {
+    position: relative;
+    max-width: 60%;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* 📱 Responsive Fix */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .auth-buttons {
+        gap: 10px;
+    }
+
+    .hero {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+
+    .hero-content {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .city-select {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 400px;
+        padding: 10px;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.3rem;
+    }
+
+    .register-btn,
+    .signin-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .search-bar {
+        padding: 6px 10px;
+        gap: 6px;
+    }
+
+    .hero {
+        height: 350px; /* Further reduce hero height */
+    }
+
+    .hero-content {
+        max-width: 95%;
+    }
+}

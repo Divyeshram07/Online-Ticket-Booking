@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+  overflow-x: hidden
+}
+
+/* Carousel Container */
+.carousel-container {
+  width: 100%;
+  min-height: 100vh; /* Ensures full-screen height */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Carousel Items */
+.carousel-item {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Fixed incorrect space in previous CSS */
+  overflow: hidden;
+}
+
+/* Video Styling */
+.carousel-video {
+  width: 100%;
+  height: 500px; 
+  object-fit: cover;
+}
+
+/* Overlay Effect */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+}
+
+/* Caption Styling */
+.carousel-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  max-width: 600px;
+  text-align: left;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5); /* Softer background */
+  padding: 20px;
+  border-radius: 8px; /* Slight rounding for modern look */
+  backdrop-filter: blur(6px);
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Caption Heading */
+.carousel-caption h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Caption Text */
+.carousel-caption p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Price Details */
+.price-details {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-top: 5px;
+}
+
+/* Book Now Button */
+.book-now-btn {
+  background: #6c63ff;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(108, 99, 255, 0.5);
+}
+
+.book-now-btn:hover {
+  background: #574bff;
+  transform: scale(1.08);
+  box-shadow: 0px 6px 15px rgba(108, 99, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 400px; /* Adjusted for mobile */
+  }
+
+  .carousel-video {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    bottom: 5%;
+    left: 5%;
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 24px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  .book-now-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-overflow {
+  overflow: hidden !important;
+  max-width: 100% !important;
+}

@@ -1,0 +1,150 @@
+/* General Styling */
+.sports-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: #0d0d0d;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Header */
+.sports-list h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ff4500;
+}
+
+/* Filters Section */
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.filters h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Filter Buttons */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-transform: uppercase;
+}
+
+button.active {
+    background: #ff4500;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff5733;
+    transform: scale(1.1);
+}
+
+/* Sports Grid */
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Event Cards */
+.sports-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(255, 69, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sports-card:hover {
+    transform: translateY(-5px);
+}
+
+.sports-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Event Details */
+.sports-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+.sports-details .category,
+.sports-details .date,
+.sports-details .venue {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Book Now Button */
+.book-btn {
+    background: #ff4500;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.book-btn:hover {
+    background: #ff5733;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .filters {
+        max-width: 100%;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sports-card img {
+        height: 150px;
+    }
+}

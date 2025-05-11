@@ -1,0 +1,39 @@
+.ticket-container {
+  background-color: #111;
+  color: #fff;
+  padding: 40px;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #00ffc3;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ticket-container h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #00ffc3;
+}
+
+.ticket-details p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.qr-section {
+  margin-top: 30px;
+}
+
+.qr-section p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #aaa;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2em;
+}

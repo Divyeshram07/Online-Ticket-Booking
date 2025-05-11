@@ -1,0 +1,192 @@
+/* General Page Styling */
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: #121212;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Event List Header */
+  .event-list h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffff;
+  }
+  
+  /* Centered Filter Section */
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+  
+  .filters h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Filter Buttons */
+  .filter-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .filter-btn.active {
+    background: #00ffff;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .filter-btn:hover {
+    background: #00ccff;
+    transform: scale(1.1);
+  }
+  
+  /* Events Grid */
+  .event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Event Cards */
+  .event-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .event-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #00ffff;
+  }
+  
+  .event-details .category,
+  .event-details .date,
+  .event-details .venue {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Book Now Button */
+  .book-btn {
+    background: #00ffff;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+  }
+  
+  .book-btn:hover {
+    background: #00ccff;
+    transform: scale(1.1);
+  }
+  
+  /* No Events Message */
+  .no-events {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ff6b6b;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .filters {
+      max-width: 100%;
+    }
+  
+    .filter-section {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .event-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .event-card img {
+      height: 150px;
+    }
+  }
+  .event-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  /* Sidebar */
+  .filters {
+    width: 250px;
+    background: #111;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+
+
+  
+  /* Event Grid */
+  .event-list {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+
+  
+  .event-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+ 
+  
+  .book-btn:hover {
+    background: #d43f1b;
+  }
+  

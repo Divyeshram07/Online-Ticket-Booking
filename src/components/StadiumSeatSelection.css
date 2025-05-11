@@ -1,0 +1,48 @@
+.stadium-container {
+    text-align: center;
+    padding: 20px;
+    background: #0a0a0a;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .stadium-map {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .section {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  .section:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    box-shadow: 0px 6px 15px rgba(255, 75, 43, 0.5);
+  }
+  
+  .section-a { background: linear-gradient(135deg, #1abc9c, #16a085); }
+  .section-b { background: linear-gradient(135deg, #f39c12, #e67e22); }
+  .section-c { background: linear-gradient(135deg, #9b59b6, #8e44ad); }
+  .section-d { background: linear-gradient(135deg, #3498db, #2980b9); }
+    .section-e { background: linear-gradient(135deg, #e74c3c, #c0392b); }  

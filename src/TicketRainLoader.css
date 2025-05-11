@@ -1,0 +1,149 @@
+.ticket-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .falling-ticket {
+    position: absolute;
+    top: -100px;
+    width: 60px;
+    animation: fall linear forwards;
+    animation-duration: 3s;
+  }
+  
+  .falling-ticket:nth-child(odd) {
+    animation-delay: calc(0.1s * var(--i));
+  }
+  .falling-ticket:nth-child(even) {
+    animation-delay: calc(0.15s * var(--i));
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 1;
+    }
+  }
+  .ticket-rain-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* Optional background for dramatic effect */
+    z-index: 9999;
+    overflow: hidden;
+  }
+  
+  .ticket {
+    position: absolute;
+    width: 40px; /* 🎯 Reduced size */
+    height: auto;
+    animation: fall 3s linear infinite;
+    pointer-events: none;
+    opacity: 0.9;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  .ticket-rain-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* dramatic black background */
+    z-index: 9999;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ticket {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    animation: fall 3s linear infinite, glow 1.5s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 5px gold);
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes glow {
+    0% {
+      filter: drop-shadow(0 0 2px #ff0);
+    }
+    50% {
+      filter: drop-shadow(0 0 10px #ff0);
+    }
+    100% {
+      filter: drop-shadow(0 0 2px #ff0);
+    }
+  }
+  .ticket-rain-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000; /* optional: black background for loader */
+    z-index: 9999;
+    overflow: hidden;
+  }
+  
+  .ticket {
+    position: absolute;
+    top: -100px; /* start above the screen */
+    width: 50px; /* small size */
+    animation: fall 3s linear forwards;
+    pointer-events: none;
+    opacity: 0.9;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  
